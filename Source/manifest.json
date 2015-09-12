@@ -1,9 +1,9 @@
 {
 	"manifest_version": 2,
-	"name": "Cloud To Butt",
+	"name": "Reach Out To Email",
 	"version": "1.0",
-	"description": "Replaces the text 'the cloud' with 'my butt'.",
-	"content_scripts": 
+	"description": "Replaces the text 'reach out' with 'email'.",
+	"content_scripts":
 	[
 		{
 			"matches": ["*://*/*"],
