@@ -1,5 +1,5 @@
-reach-out-to-email
-==================
+'alt-right' to 'neo-Nazi'
+=========================
 
 Chrome extension that replaces occurrences of 'alt-right' with 'neo-Nazi', plus some variations.
 
