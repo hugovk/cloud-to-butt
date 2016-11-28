@@ -20,3 +20,4 @@ Alternatives
 8. [Make Nazis Nazis Again](https://chrome.google.com/webstore/detail/make-nazis-nazis-again/penllempojifafifdffeibingloicmda)
 9. [Replace Alt-Right Term](https://chrome.google.com/webstore/detail/replace-alt-right-term/bflimcoiapgkaedeecaapglcdckmopaa)
 10. [Media Corrector](https://chrome.google.com/webstore/detail/media-corrector/amhdcgkbohnmbocdgedmfcinkmgjklig)
+11. [Stop Normalizing Alt Right Neo-Nazi Edition](https://chrome.google.com/webstore/detail/stop-normalizing-alt-righ/ffbjneeahjafobcedlebkckenpkppjhj)
