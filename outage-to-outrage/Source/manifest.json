@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Outage To Outrage",
+	"version": "1.0",
+	"description": "Replaces the text 'outage' with 'outrage'.",
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
