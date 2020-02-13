@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Machine Learning to Thing Labelling",
+	"version": "1.0",
+	"description": "Replaces the text 'machine learning' with 'thing labelling'.",
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
