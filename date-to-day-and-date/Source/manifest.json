@@ -1,0 +1,15 @@
+{
+	"manifest_version": 3,
+	"name": "Date to Day and Date",
+	"version": "1.0",
+	"description": "Add the day of the week to dates.",
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
