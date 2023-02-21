@@ -30,11 +30,12 @@ function walk(node)
 function handleText(textNode)
 {
 	var v = textNode.nodeValue;
-	const re = /(January|February|March|April|May|June|July|August|September|October|November|December) [0-3]?\d, 20\d\d/;
-	if (found = v.match(re)) {
-		const unix = Date.parse(found[0])
+	const re = /(January|February|March|April|May|June|July|August|September|October|November|December) [0-3]?\d, 20\d\d/g;
+
+	while ((match = re.exec(v)) !== null) {
+		const unix = Date.parse(match[0]);
 		const dayName = new Date(unix).toLocaleString('en-us', {weekday:'short'});
-		const position = found.index;
+		const position = match.index;
 		const newText = '[' + dayName + '] ';
 		v = [v.slice(0, position), newText, v.slice(position)].join('');
 	}
