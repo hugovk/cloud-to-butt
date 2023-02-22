@@ -1,15 +1,13 @@
 {
-	"manifest_version": 2,
-	"name": "Alt-Right To Neo-Nazi",
-	"version": "1.0",
-	"description": "Replaces the text 'alt-right' with 'neo-Nazi'.",
-	"content_scripts":
-	[
-		{
-			"matches": ["*://*/*"],
-			"js": ["content_script.js"],
-			"run_at": "document_end"
-		}
-	]
+  "manifest_version": 2,
+  "name": "Alt-Right To Neo-Nazi",
+  "version": "1.0",
+  "description": "Replaces the text 'alt-right' with 'neo-Nazi'.",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content_script.js"],
+      "run_at": "document_end"
+    }
+  ]
 }
-

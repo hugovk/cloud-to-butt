@@ -1,15 +1,15 @@
-'alt-right' to 'neo-Nazi'
-=========================
+# 'alt-right' to 'neo-Nazi'
 
-Chrome extension that replaces occurrences of 'alt-right' with 'neo-Nazi', plus some variations.
+Chrome extension that replaces occurrences of 'alt-right' with 'neo-Nazi', plus some
+variations.
 
-Installation
-------------
+## Installation
 
-In Chrome, choose Window > Extensions. Check 'Developer mode', then 'Load unpacked extension...' and navigate to this Source directory.
+In Chrome, choose Window > Extensions. Check 'Developer mode', then 'Load unpacked
+extension...' and navigate to this Source directory.
 
-Alternatives
-------------
+## Alternatives
+
 1. [Not alt-right](https://github.com/adamvduke/not-alt-right)
 2. [Alt Right Fix](https://chrome.google.com/webstore/detail/alt-right-fix/fdohnkiocfpjlehneecleokldnkdaick)
 3. [Denormalize](https://chrome.google.com/webstore/detail/denormalize/pbpifbdjonemkjcbfhakfkjhibjppbdk)

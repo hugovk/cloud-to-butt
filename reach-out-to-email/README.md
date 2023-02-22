@@ -1,9 +1,9 @@
-reach-out-to-email
-==================
+# reach-out-to-email
 
-Chrome extension that replaces occurrences of 'reach out' with 'email', plus some variations.
+Chrome extension that replaces occurrences of 'reach out' with 'email', plus some
+variations.
 
-Installation
-------------
+## Installation
 
-In Chrome, choose Window > Extensions. Check 'Developer mode', then 'Load unpacked extension...' and navigate to this Source directory.
+In Chrome, choose Window > Extensions. Check 'Developer mode', then 'Load unpacked
+extension...' and navigate to this Source directory.
