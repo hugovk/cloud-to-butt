@@ -3,7 +3,7 @@ walk(document.body);
 function walk(node)
 {
 	// I stole this function from here:
-	// http://is.gd/mwZp7E
+	// https://stackoverflow.com/a/5904945/724176
 
 	var child, next;
 
@@ -31,13 +31,25 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 	const re = /(January|February|March|April|May|June|July|August|September|October|November|December) [0-3]?\d, 20\d\d/g;
+	const matches = v.matchAll(re);
 
-	while ((match = re.exec(v)) !== null) {
+	for (const match of matches) {
 		const unix = Date.parse(match[0]);
-		const dayName = new Date(unix).toLocaleString('en-us', {weekday:'short'});
+		const shortDayName = new Date(unix).toLocaleString('en-us', {weekday: 'short'});
+		const longDayName = new Date(unix).toLocaleString('en-us', {weekday: 'long'});
 		const position = match.index;
-		const newText = '[' + dayName + '] ';
-		v = [v.slice(0, position), newText, v.slice(position)].join('');
+		const newText = '[' + shortDayName + '] ';
+		const skip = [
+			shortDayName + ' ' + match[0],
+			shortDayName + ', ' + match[0],
+			longDayName + ' ' + match[0],
+			longDayName + ', ' + match[0],
+		];
+		const alreadyHasDayName = skip.some(str => v.includes(str));
+		if (!alreadyHasDayName) {
+			v = [v.slice(0, position), newText, v.slice(position)].join('');
+		}
+
 	}
 
 	textNode.nodeValue = v;
